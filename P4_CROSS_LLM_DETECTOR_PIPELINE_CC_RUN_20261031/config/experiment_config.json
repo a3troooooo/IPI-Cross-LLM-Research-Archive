@@ -1,0 +1,31 @@
+{
+  "project": "Cross-LLM Generalization of Behavioral Detection for Indirect Prompt Injection in LLM Agents",
+  "seed": 20261031,
+  "algorithms": [
+    "LR",
+    "RF",
+    "GB"
+  ],
+  "feature_versions": [
+    "V77",
+    "V69"
+  ],
+  "feature_regimes": [
+    "V_all",
+    "V_exp"
+  ],
+  "models": [
+    "LLM-A",
+    "LLM-B",
+    "LLM-C"
+  ],
+  "cv_splits": 3,
+  "random_search_iterations": 12,
+  "bootstrap_replicates": 2000,
+  "threshold_rule": "validation_max_balanced_accuracy",
+  "threshold_grid_size": 201,
+  "primary_tuning_metric": "average_precision",
+  "n_jobs": -1,
+  "experiment_count_expected": 144,
+  "fpr_cap": null
+}

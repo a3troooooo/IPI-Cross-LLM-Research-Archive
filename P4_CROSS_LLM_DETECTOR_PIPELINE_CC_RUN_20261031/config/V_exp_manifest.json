@@ -1,0 +1,15 @@
+{
+  "manifest_name": "V_exp",
+  "version": "1.0",
+  "definition": "Exposure-structure feature subset: primary P3 features explicitly measuring free-text exposure and subsequent action structure.",
+  "selection_rule": "Include only the six primary features in the frozen P3 feature schema group exposure_structure. No label, model, split, suite, ID, group, attacker-goal, evaluator-outcome, or raw-text fields are included.",
+  "features": [
+    "n_freetext_reads",
+    "n_writes_after_freetext",
+    "n_egress_after_freetext",
+    "n_destructive_after_freetext",
+    "frac_writes_after_freetext",
+    "n_calls_after_last_freetext"
+  ],
+  "caveat": "This is the operational P4 definition adopted for this pipeline, based on the frozen P3 schema's exposure_structure group. Review it as a research-design decision before interpreting V_exp as a causal measure; it is an exposure-structure subset, not proof of attention or causal compliance."
+}

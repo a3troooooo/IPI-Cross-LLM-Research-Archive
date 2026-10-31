@@ -1,0 +1,13 @@
+{
+  "event": "BLIND_TEST_LABELS_UNSEALED",
+  "unsealed_at_utc": "2026-10-31T06:48:00.075657+00:00",
+  "archive": "/Users/a3trophyr/Desktop/after_lock/SEALED_TEST_LABELS_OPEN_ONLY_AFTER_SCORE_FREEZE.zip",
+  "archive_sha256": "3b264f9264f34d5e39cabe43f8c01f2dd3f2bcb87411bff1087561edb1d5e0b7",
+  "extracted_labels": "/Users/a3trophyr/Desktop/P4_CROSS_LLM_DETECTOR_PIPELINE_CC_RUN_20261031/outputs/after_unseal_inputs/test_labels_234.csv",
+  "labels_sha256": "e8503b00ebc85dc706d99ccff6bbcbd3b13fa6e213e6b98c6fa80202eaf1affa",
+  "row_count": 234,
+  "positive": 65,
+  "negative": 169,
+  "unique_test_ids_match_frozen_membership": true,
+  "original_archive_preserved": true
+}

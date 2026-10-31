@@ -1,0 +1,14 @@
+{
+  "START_HERE.md": "6d6612fb17557c0fe693f1a43c3ecd2ed178a97a1c483dd8792627f062ac13ee",
+  "config/V_exp_manifest.json": "80d5b80aa5f70bb6c63b9f0eace18ad3231bbf11da55669636f203f291644156",
+  "config/experiment_config.json": "ad33798dffe252d1f0972f52051d217861e1b045af43383a013fa4c2f489701b",
+  "data/features_p3_77_1131.csv": "6bb8c94c5964d24117a7d832a2c05ad7fa0b911d0e301a33802df09e6ded414e",
+  "data/features_p4_69_1131.csv": "dc26ec40130a5ed456b287034857aa6fd83fbc02ade37332d6b8ebd574167f6c",
+  "data/metadata_membership_1131.csv": "632753ed11f5ee2ac7a89b6c16969c529dea50929503bd88c32d5eb17c9e635b",
+  "data/train_validation_labels_897.csv": "668a55fd234cb33ed9cdba60d1b5954954b22c5418c378f4ba98f2ab04cb3526",
+  "docs/P4_MASTER_EXPERIMENTAL_PROTOCOL_v1.0.md": "2f59c1305a92671d39ffa1e48b00b8221733470ce979d56b3afaf777ac88947f",
+  "requirements.txt": "fdb2e38ee42f2cc1cdace67743a157bf40f72e02c9460c054733615978edc68c",
+  "scripts/p4.py": "e90be734b8019a8f3f73692c6adfb10cb13b65b0691267329f9a07959be50556",
+  "src/pipeline.py": "d0a51bdbd8980d69b5322384dbb199cccb061d66b682f1f6119d1dc7f62c9501",
+  "tests/test_vexp_manifest.py": "76d5fc321cbc97c6526511f62e5c33a54c33143163dd689ed02b45a59bb6fe4e"
+}

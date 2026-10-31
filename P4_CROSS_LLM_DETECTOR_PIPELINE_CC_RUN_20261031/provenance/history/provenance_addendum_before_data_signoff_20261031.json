@@ -1,0 +1,107 @@
+{
+  "document": "P4 CC_RUN Provenance Reconciliation Addendum",
+  "version": "1.0",
+  "created_at_utc": "2026-10-31T06:36:03.860537+00:00",
+  "run_directory": "/Users/a3trophyr/Desktop/P4_CROSS_LLM_DETECTOR_PIPELINE_CC_RUN_20261031",
+  "original_manifest": {
+    "path": "provenance/provenance_manifest.json",
+    "sha256_before_reconciliation": "45faf6d2ed82a2fc995f586a8a066e1852768e8c4a975362324472659ac2dcdf",
+    "preserved_copy": "provenance/history/provenance_manifest_original_20261031.json"
+  },
+  "actual_execution_environment": {
+    "captured_at_utc": "2026-10-31T06:36:03.845531+00:00",
+    "python_executable": "/Users/a3trophyr/Desktop/P4_CROSS_LLM_DETECTOR_PIPELINE_CC_RUN_20261031/.venv/bin/python",
+    "python_version": "3.14.3 (v3.14.3:323c59a5e34, Feb  3 2026, 11:41:37) [Clang 16.0.0 (clang-1600.0.26.6)]",
+    "platform": "macOS-26.6.2-arm64-arm-64bit-Mach-O",
+    "machine": "arm64",
+    "implementation": "CPython",
+    "pip_freeze_file": "provenance/environment_cc_run_20261031.txt",
+    "pip_freeze_sha256": "04cb9ef488e638360926b46f7f4b43aed5a4f874d4f36182a2709950bcb43133",
+    "pip_check_returncode": 0,
+    "pip_check_stdout": "No broken requirements found.",
+    "pip_check_stderr": ""
+  },
+  "original_environment_reference": {
+    "python_version": "3.14.3 (v3.14.3:323c59a5e34, Feb  3 2026, 11:41:37) [Clang 16.0.0 (clang-1600.0.26.6)]",
+    "python_executable": "/Users/a3trophyr/Desktop/P4_CROSS_LLM_DETECTOR_PIPELINE_v1.0/.venv/bin/python",
+    "platform": "macOS-26.6.2-arm64-arm-64bit-Mach-O",
+    "machine": "arm64",
+    "processor": "arm",
+    "pip_freeze_sha256": "04cb9ef488e638360926b46f7f4b43aed5a4f874d4f36182a2709950bcb43133"
+  },
+  "current_file_hashes": {
+    "src/pipeline.py": {
+      "exists": true,
+      "sha256": "582a292dd524880890c3918d02c24cb551169fe13ae05eb852dbc8fc68f0ef04",
+      "size_bytes": 22871
+    },
+    "scripts/p4.py": {
+      "exists": true,
+      "sha256": "e90be734b8019a8f3f73692c6adfb10cb13b65b0691267329f9a07959be50556",
+      "size_bytes": 197
+    },
+    "config/experiment_config.json": {
+      "exists": true,
+      "sha256": "ad33798dffe252d1f0972f52051d217861e1b045af43383a013fa4c2f489701b",
+      "size_bytes": 632
+    },
+    "config/V_exp_manifest.json": {
+      "exists": true,
+      "sha256": "80d5b80aa5f70bb6c63b9f0eace18ad3231bbf11da55669636f203f291644156",
+      "size_bytes": 942
+    },
+    "requirements.txt": {
+      "exists": true,
+      "sha256": "fdb2e38ee42f2cc1cdace67743a157bf40f72e02c9460c054733615978edc68c",
+      "size_bytes": 93
+    },
+    "docs/P4_MASTER_EXPERIMENTAL_PROTOCOL_v1.0.md": {
+      "exists": true,
+      "sha256": "2f59c1305a92671d39ffa1e48b00b8221733470ce979d56b3afaf777ac88947f",
+      "size_bytes": 34296
+    },
+    "data/features_p3_77_1131.csv": {
+      "exists": true,
+      "sha256": "6bb8c94c5964d24117a7d832a2c05ad7fa0b911d0e301a33802df09e6ded414e",
+      "size_bytes": 263602
+    },
+    "data/features_p4_69_1131.csv": {
+      "exists": true,
+      "sha256": "dc26ec40130a5ed456b287034857aa6fd83fbc02ade37332d6b8ebd574167f6c",
+      "size_bytes": 246003
+    },
+    "data/metadata_membership_1131.csv": {
+      "exists": true,
+      "sha256": "632753ed11f5ee2ac7a89b6c16969c529dea50929503bd88c32d5eb17c9e635b",
+      "size_bytes": 98472
+    },
+    "data/train_validation_features_69_897.csv": {
+      "exists": false,
+      "sha256": null
+    },
+    "data/train_validation_labels_897.csv": {
+      "exists": true,
+      "sha256": "668a55fd234cb33ed9cdba60d1b5954954b22c5418c378f4ba98f2ab04cb3526",
+      "size_bytes": 134625
+    },
+    "data/blind_test_features_69_234.csv": {
+      "exists": false,
+      "sha256": null
+    }
+  },
+  "locked_test_scores": {
+    "path": "outputs/locked_test_scores/test_scores_locked.csv",
+    "sha256": "12a25f1bccf148c61bb14087684ba8c75465238d2eb406e1671edee6f4ac6872",
+    "status": "DO_NOT_MODIFY"
+  },
+  "test_labels": {
+    "status": "SEALED",
+    "opened": false,
+    "included_in_run_copy": false
+  },
+  "notes": [
+    "This addendum supplements but does not replace the original manifest.",
+    "The actual CC_RUN Python executable is recorded separately.",
+    "No training, predictions, locked scores, or test labels were modified."
+  ]
+}
