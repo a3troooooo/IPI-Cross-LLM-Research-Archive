@@ -1,0 +1,7 @@
+module,status,detail
+Input audit,PASS,"V77=(1131, 78); V69=(1131, 70); train/val labels=897; test labels=234"
+Connected-component audit,PASS,88 components; components spanning splits=0
+SHAP,PASS,18/18 model contexts explained; V77/V_all; test explanation is post-unseal exploratory
+Connected-component bootstrap,PASS,144 experiment-metric intervals
+Random/prevalence/rule baselines,PASS,606 rows; rule fixed before test evaluation; exploratory
+Feature ablation design,BLOCKED,Feature groups and ablation matrix generated; refits require approval of semantic grouping before execution

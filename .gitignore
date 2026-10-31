@@ -26,3 +26,9 @@ credentials/
 *.bak
 *.swp
 *~
+
+# Python environments and cache
+**/.venv/
+**/__pycache__/
+*.pyc
+.DS_Store

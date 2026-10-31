@@ -1,0 +1,15 @@
+[PASS] Input and schema audit: metrics=144, locked=11232, labels=234
+[PASS] Formal single-source generalization gaps: 432 directed comparisons
+[PASS] Pooled LOLO comparison: 36 cells; kept separate from formal single-source gap
+[PASS] Matched pooled-vs-single statistics: 6 metric tests; exploratory matched summaries
+[PASS] Existing P4 analysis review: Copied bootstrap CI, KS, validation permutation and fair comparison tables
+[PASS] Frozen artifact count audit: Counts recorded; source P4 files not modified
+[BLOCKED] SHAP: Requires prespecified background/explanation cohort and estimator-specific validation.
+[BLOCKED] Feature ablation: Requires a prespecified ablation design and secondary model training; P4 remains frozen.
+[BLOCKED] Random/rule/text baselines: Baseline definitions/implementations are not present in supplied P4 artifacts.
+[BLOCKED] Label sensitivity: Requires a prespecified sensitivity protocol; frozen labels are not modified.
+[BLOCKED] Pbase/payload shift: Required comparison dataset and mapping are not present in supplied schema.
+[PASS] P4 snapshot verification: checked=182, missing=0, mismatches=0
+
+REPORT: /Users/a3trophyr/Desktop/IPI-Cross-LLM-Research-Archive/P5_POSTHOC_ANALYSIS/reports/P5_MASTER_REPORT.md
+STATUS: {'PASS': 7, 'BLOCKED': 5}

@@ -1,0 +1,9 @@
+[PASS] Input audit: V77=(1131, 78); V69=(1131, 70); train/val labels=897; test labels=234
+[PASS] Connected-component audit: 88 components; components spanning splits=0
+[PASS] SHAP: 9/18 model contexts explained; V77/V_all; test explanation is post-unseal exploratory
+[PASS] Connected-component bootstrap: 144 experiment-metric intervals
+[PASS] Random/prevalence/rule baselines: 606 rows; rule fixed before test evaluation; exploratory
+[BLOCKED] Feature ablation design: Feature groups and ablation matrix generated; refits require approval of semantic grouping before execution
+
+REPORT: reports/P5_EXTENDED_REPORT.md
+STATUS: {'PASS': 5, 'BLOCKED': 1}

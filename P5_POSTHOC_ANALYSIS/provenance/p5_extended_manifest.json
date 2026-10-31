@@ -1,0 +1,51 @@
+{
+  "started_utc": "2026-10-31T10:45:57.663977+00:00",
+  "finished_utc": "2026-10-31T10:54:05.257137+00:00",
+  "python": "3.14.3 (v3.14.3:323c59a5e34, Feb  3 2026, 11:41:37) [Clang 16.0.0 (clang-1600.0.26.6)]",
+  "platform": "macOS-26.6.2-arm64-arm-64bit-Mach-O",
+  "p4_path": "../P4_CROSS_LLM_DETECTOR_PIPELINE_CC_RUN_20261031",
+  "p5_path": ".",
+  "p4_read_only": true,
+  "modules": [
+    {
+      "module": "Input audit",
+      "status": "PASS",
+      "detail": "V77=(1131, 78); V69=(1131, 70); train/val labels=897; test labels=234"
+    },
+    {
+      "module": "Connected-component audit",
+      "status": "PASS",
+      "detail": "88 components; components spanning splits=0"
+    },
+    {
+      "module": "SHAP",
+      "status": "PASS",
+      "detail": "18/18 model contexts explained; V77/V_all; test explanation is post-unseal exploratory"
+    },
+    {
+      "module": "Connected-component bootstrap",
+      "status": "PASS",
+      "detail": "144 experiment-metric intervals"
+    },
+    {
+      "module": "Random/prevalence/rule baselines",
+      "status": "PASS",
+      "detail": "606 rows; rule fixed before test evaluation; exploratory"
+    },
+    {
+      "module": "Feature ablation design",
+      "status": "BLOCKED",
+      "detail": "Feature groups and ablation matrix generated; refits require approval of semantic grouping before execution"
+    }
+  ],
+  "limitations": [
+    "SHAP explanations use a Train-only background but explain post-unseal Test predictions; exploratory, not confirmatory.",
+    "SHAP run is limited to V77/V_all and 18 contexts (3 algorithms x 6 training contexts).",
+    "Feature ablation refits are not run: the generated feature-group taxonomy must be approved before secondary refitting.",
+    "Connected-component bootstrap resamples components; this is a new post-hoc interval analysis, not the original P4 bootstrap.",
+    "Rule baseline is a fixed exposure-then-sensitive-action heuristic, not a validated domain rule; report as exploratory.",
+    "Random baseline uses 200 Monte Carlo score draws per target; prevalence constant has no AUROC ranking information.",
+    "No P4 models, labels, scores, thresholds, or manifests are modified."
+  ],
+  "errors": []
+}

@@ -1,0 +1,13 @@
+module,status,detail
+Input and schema audit,PASS,"metrics=144, locked=11232, labels=234"
+Formal single-source generalization gaps,PASS,432 directed comparisons
+Pooled LOLO comparison,PASS,36 cells; kept separate from formal single-source gap
+Matched pooled-vs-single statistics,PASS,6 metric tests; exploratory matched summaries
+Existing P4 analysis review,PASS,"Copied bootstrap CI, KS, validation permutation and fair comparison tables"
+Frozen artifact count audit,PASS,Counts recorded; source P4 files not modified
+SHAP,BLOCKED,Requires prespecified background/explanation cohort and estimator-specific validation.
+Feature ablation,BLOCKED,Requires a prespecified ablation design and secondary model training; P4 remains frozen.
+Random/rule/text baselines,BLOCKED,Baseline definitions/implementations are not present in supplied P4 artifacts.
+Label sensitivity,BLOCKED,Requires a prespecified sensitivity protocol; frozen labels are not modified.
+Pbase/payload shift,BLOCKED,Required comparison dataset and mapping are not present in supplied schema.
+P4 snapshot verification,PASS,"checked=182, missing=0, mismatches=0"

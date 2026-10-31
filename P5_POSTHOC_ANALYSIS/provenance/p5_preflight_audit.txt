@@ -1,0 +1,85 @@
+P5 MASTER PREFLIGHT AUDIT
+============================================================
+Python: 3.14.3
+Platform: macOS-26.6.2-arm64-arm-64bit-Mach-O
+
+REQUIRED INPUTS
+[OK] config/experiment_config.json
+[OK] data/features_p3_77_1131.csv
+[OK] data/features_p4_69_1131.csv
+[OK] data/metadata_membership_1131.csv
+[OK] data/train_validation_labels_897.csv
+[OK] outputs/after_unseal_inputs/test_labels_234.csv
+[OK] outputs/locked_test_scores/lock_manifest.json
+[OK] outputs/locked_test_scores/test_scores_locked.csv
+[OK] outputs/final_test_evaluation/test_metrics_by_cell.csv
+[OK] outputs/final_test_evaluation/test_predictions_with_labels_after_unseal.csv
+[OK] outputs/final_test_evaluation/group_bootstrap_95ci.csv
+[OK] outputs/final_test_evaluation/fair_cross_llm_comparison.csv
+[OK] outputs/models
+[OK] src/pipeline.py
+
+DEPENDENCIES
+numpy: 2.5.4
+pandas: 3.1.0
+scipy: 1.18.1
+scikit-learn: 1.9.1
+matplotlib: 3.11.2
+seaborn: NOT INSTALLED
+joblib: 1.6.0
+shap: 0.54.1
+openpyxl: 3.1.5
+imbalanced-learn: NOT INSTALLED
+
+P4 INTEGRITY
+Snapshot exists: True
+Files checked: 182
+Mismatches: 0
+Missing: 0
+
+CSV SCHEMAS
+
+data/features_p3_77_1131.csv: READABLE
+  trajectory_id, n_tool_calls, n_tool_results, n_unique_tools, n_unmapped_tool_calls, trajectory_length, n_read, n_write, n_egress, n_destructive, frac_write, frac_egress, n_act_retrieve, n_act_list, n_act_search, n_act_create, n_act_update, n_act_delete, n_act_send_message, n_act_transfer_value, n_act_publish, n_act_reserve, n_act_share, n_act_admin, n_domains, n_domain_switches, n_write_domains, n_writes_new_domain, action_entropy, has_write, first_write_pos, n_reads_after_first_write, n_write_bursts, max_read_streak, n_repeated_call_shapes, n_tool_revisits, max_same_tool_run, trans_RR, trans_RW, trans_RE, trans_WR, trans_WW, trans_WE, trans_ER, trans_EW, trans_EE, n_freetext_reads, n_writes_after_freetext, n_egress_after_freetext, n_destructive_after_freetext, frac_writes_after_freetext, n_calls_after_last_freetext, n_tool_errors, frac_tool_errors, n_retry_after_error, n_calls_without_result, n_error_valueerror, n_error_validationerror, n_error_keyerror, n_error_other, mean_args_per_call, max_args_per_call, n_calls_without_args, n_unparseable_args, n_calls_missing_required, n_calls_extra_args, frac_arg_str, frac_arg_number, frac_arg_bool, frac_arg_collection, frac_arg_empty, ended_with_final, final_output_present, n_steps, max_calls_per_step, mean_calls_per_step, n_agent_messages, n_steps_message_and_call
+
+data/features_p4_69_1131.csv: READABLE
+  trajectory_id, n_tool_calls, n_tool_results, n_unique_tools, n_unmapped_tool_calls, n_read, n_write, n_egress, n_destructive, frac_write, frac_egress, n_act_retrieve, n_act_list, n_act_search, n_act_create, n_act_update, n_act_delete, n_act_send_message, n_act_transfer_value, n_act_publish, n_act_reserve, n_act_share, n_act_admin, n_domains, n_domain_switches, n_write_domains, n_writes_new_domain, action_entropy, has_write, first_write_pos, n_reads_after_first_write, n_write_bursts, max_read_streak, n_repeated_call_shapes, n_tool_revisits, max_same_tool_run, trans_RR, trans_RW, trans_RE, trans_WR, trans_WW, trans_WE, trans_ER, trans_EW, trans_EE, n_freetext_reads, n_writes_after_freetext, n_egress_after_freetext, n_destructive_after_freetext, frac_writes_after_freetext, n_calls_after_last_freetext, n_tool_errors, frac_tool_errors, n_retry_after_error, n_error_valueerror, n_error_validationerror, n_error_keyerror, n_error_other, mean_args_per_call, max_args_per_call, n_calls_without_args, n_calls_missing_required, n_calls_extra_args, frac_arg_str, frac_arg_number, frac_arg_bool, frac_arg_collection, frac_arg_empty, max_calls_per_step, mean_calls_per_step
+
+data/metadata_membership_1131.csv: READABLE
+  trajectory_id, target_model, split, condition_group_id, user_task_group_id, suite
+
+data/train_validation_labels_897.csv: READABLE
+  trajectory_id, target_model, split, condition_group_id, user_task_group_id, suite, ipi_affected, label_source, original_review_tier, original_review_status
+
+outputs/after_unseal_inputs/test_labels_234.csv: READABLE
+  trajectory_id, target_model, split, condition_group_id, user_task_group_id, suite, ipi_affected, label_source, original_review_tier, original_review_status, scenario_type_SECONDARY, strict_attack_success_SECONDARY
+
+outputs/locked_test_scores/test_scores_locked.csv: READABLE
+  experiment_id, training_strategy, source_model, target_model, feature_version, feature_regime, algorithm, trajectory_id, score, threshold, predicted_label
+
+outputs/final_test_evaluation/test_metrics_by_cell.csv: READABLE
+  experiment_id, training_strategy, source_model, target_model, feature_version, feature_regime, algorithm, n, positive, negative, prevalence, auroc, average_precision, precision, recall_tpr, f1, balanced_accuracy, fpr_all_negative, fnr, tn, fp, fn, tp, threshold
+
+outputs/final_test_evaluation/test_predictions_with_labels_after_unseal.csv: READABLE
+  experiment_id, training_strategy, source_model, target_model, feature_version, feature_regime, algorithm, trajectory_id, score, threshold, predicted_label, ipi_affected
+
+outputs/final_test_evaluation/group_bootstrap_95ci.csv: READABLE
+  experiment_id, training_strategy, source_model, target_model, feature_version, feature_regime, algorithm, metric, ci_low, ci_high, valid_replicates
+
+outputs/final_test_evaluation/fair_cross_llm_comparison.csv: READABLE
+  experiment_id, training_strategy, source_model, target_model, feature_version, feature_regime, algorithm, n, positive, negative, prevalence, auroc, average_precision, precision, recall_tpr, f1, balanced_accuracy, fpr_all_negative, fnr, tn, fp, fn, tp, threshold, comparison
+
+outputs/development/permutation_importance_validation.csv: READABLE
+  experiment_id, feature, importance_mean, importance_std
+
+outputs/development/V69_ks_train.csv: READABLE
+  version, feature, ks_statistic, p_value, n_positive, n_negative
+
+outputs/development/V77_ks_train.csv: READABLE
+  version, feature, ks_statistic, p_value, n_positive, n_negative
+
+outputs/development/hyperparameter_search_summary.csv: READABLE
+  experiment_id, best_cv_average_precision, best_params, model_sha256
+
+outputs/development/validation_metrics_all.csv: READABLE
+  experiment_id, feature_version, feature_regime, algorithm, strategy, source_models, target_model, split, n, positive, negative, prevalence, auroc, average_precision, precision, recall_tpr, f1, balanced_accuracy, fpr_all_negative, fnr, tn, fp, fn, tp, threshold

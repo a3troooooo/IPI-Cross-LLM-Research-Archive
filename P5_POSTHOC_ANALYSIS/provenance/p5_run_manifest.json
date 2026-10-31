@@ -1,0 +1,80 @@
+{
+  "started_utc": "2026-10-31T08:23:50.250440+00:00",
+  "finished_utc": "2026-10-31T08:23:50.487597+00:00",
+  "python": "3.14.3 (v3.14.3:323c59a5e34, Feb  3 2026, 11:41:37) [Clang 16.0.0 (clang-1600.0.26.6)]",
+  "platform": "macOS-26.6.2-arm64-arm-64bit-Mach-O",
+  "p4_path": "/Users/a3trophyr/Desktop/IPI-Cross-LLM-Research-Archive/P4_CROSS_LLM_DETECTOR_PIPELINE_CC_RUN_20261031",
+  "p5_path": "/Users/a3trophyr/Desktop/IPI-Cross-LLM-Research-Archive/P5_POSTHOC_ANALYSIS",
+  "p4_read_only": true,
+  "module_status": [
+    {
+      "module": "Input and schema audit",
+      "status": "PASS",
+      "detail": "metrics=144, locked=11232, labels=234"
+    },
+    {
+      "module": "Formal single-source generalization gaps",
+      "status": "PASS",
+      "detail": "432 directed comparisons"
+    },
+    {
+      "module": "Pooled LOLO comparison",
+      "status": "PASS",
+      "detail": "36 cells; kept separate from formal single-source gap"
+    },
+    {
+      "module": "Matched pooled-vs-single statistics",
+      "status": "PASS",
+      "detail": "6 metric tests; exploratory matched summaries"
+    },
+    {
+      "module": "Existing P4 analysis review",
+      "status": "PASS",
+      "detail": "Copied bootstrap CI, KS, validation permutation and fair comparison tables"
+    },
+    {
+      "module": "Frozen artifact count audit",
+      "status": "PASS",
+      "detail": "Counts recorded; source P4 files not modified"
+    },
+    {
+      "module": "SHAP",
+      "status": "BLOCKED",
+      "detail": "Requires prespecified background/explanation cohort and estimator-specific validation."
+    },
+    {
+      "module": "Feature ablation",
+      "status": "BLOCKED",
+      "detail": "Requires a prespecified ablation design and secondary model training; P4 remains frozen."
+    },
+    {
+      "module": "Random/rule/text baselines",
+      "status": "BLOCKED",
+      "detail": "Baseline definitions/implementations are not present in supplied P4 artifacts."
+    },
+    {
+      "module": "Label sensitivity",
+      "status": "BLOCKED",
+      "detail": "Requires a prespecified sensitivity protocol; frozen labels are not modified."
+    },
+    {
+      "module": "Pbase/payload shift",
+      "status": "BLOCKED",
+      "detail": "Required comparison dataset and mapping are not present in supplied schema."
+    },
+    {
+      "module": "P4 snapshot verification",
+      "status": "PASS",
+      "detail": "checked=182, missing=0, mismatches=0"
+    }
+  ],
+  "errors": [],
+  "limitations": [
+    "Pooled LOLO is reported separately from the paper's single-source gap definitions.",
+    "Matched tests compare target/configuration/algorithm summaries; they are exploratory and not independent-cell inference.",
+    "P4 permutation importance is validation-based, not a test-level importance estimate.",
+    "P4 validation thresholds were selected on validation by maximum balanced accuracy; validation metrics are tuned.",
+    "P4 bootstrap resamples user_task_group_id with condition_group_id fallback, not necessarily connected components.",
+    "SHAP, ablation, baselines, label sensitivity and Pbase/payload shift are BLOCKED pending a prespecified protocol/data."
+  ]
+}
